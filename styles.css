@@ -80,7 +80,7 @@ img { max-width: 100%; }
   margin: 0 auto;
 }
 
-.hero p {
+.hero__text p {
   font-weight: var(--roboto-light-fw);
   font-size: var(--roboto-light-fs);
   letter-spacing: 1rem;
@@ -119,6 +119,10 @@ img { max-width: 100%; }
 .created h2 { margin-bottom: 0.8em; }
 
 /* ----- Media Queries ----- */
+
+@media (max-width: 400px) {
+  h1 { font-size: 3rem; }
+}
 
 @media (max-width: 675px) {
 
