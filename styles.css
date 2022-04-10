@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
 
 :root {
-  /* Colors */
+  /* ----- Colors ----- */
   --light-brown-clr: #F3EED9;
   --brown-clr: #824936;
   --dark-clr: #222C2A;
 
-  /* Typography */
+  /* ----- Typography ----- */
   --roboto-light-fs: 1.125rem;
   --roboto-regular-fs: 1.313rem;
   --roboto-light-fw: 300;
@@ -15,7 +15,7 @@
   --playfair-fs-36: 2.25rem;
 }
 
-/* Resets */
+/* ----- Resets ----- */
 
 * {
   padding: 0;
@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 
-/* Typography */
+/* ----- Typography ----- */
 
 body { font-family: 'Roboto', sans-serif; }
 
@@ -43,13 +43,12 @@ p {
   font-size: var(--roboto-regular-fs);
 }
 
-/* Utilities */
+/* ----- Utilities ----- */
 
 .container {
   max-width: 1128px;
   width: 80%;
   margin: 0 auto;
-  /* border: 2px solid green; */
 }
 
 .row {
@@ -64,7 +63,7 @@ section { padding: 4em 0; }
 
 img { width: 100%; }
 
-/* Hero Section */
+/* ----- Hero Section ----- */
 
 .hero {
   display: flex;
@@ -88,7 +87,7 @@ img { width: 100%; }
   text-transform: uppercase;
 }
 
-/* Quality Designs Section */
+/* ----- Quality Designs Section ----- */
 
 .quality { padding: 6em 0; }
 
@@ -100,7 +99,7 @@ img { width: 100%; }
 
 .quality p { color: var(--dark-clr); }
 
-/* Made Custom for You Section */
+/* ----- Made Custom for You Section ----- */
 
 .custom {
   background-color: var(--dark-clr);
@@ -110,7 +109,7 @@ img { width: 100%; }
 
 .custom h2 { margin-bottom: 0.8em; }
 
-/* Created With Care Section */
+/* ----- Created With Care Section ----- */
 
 .created {
   background-color: var(--brown-clr);
@@ -119,17 +118,19 @@ img { width: 100%; }
 
 .created h2 { margin-bottom: 0.8em; }
 
-/* Media Queries */
+/* ----- Media Queries ----- */
 
 @media (max-width: 675px) {
+
+  .hero__text { width: 100%; }
+  
   .row { display: block; }
 
-  .col + .col {
-    padding-top: 2em;
-  }
+  .col + .col { padding-top: 2em;}
 
   .quality,
-  .custom { padding: 2em 0; }
+  .custom,
+  .created { padding: 2em 0; }
 
   .custom h2,
   .created h2 { text-align: center; }
