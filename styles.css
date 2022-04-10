@@ -61,7 +61,7 @@ p {
 
 section { padding: 4em 0; }
 
-img { width: 100%; }
+img { max-width: 100%; }
 
 /* ----- Hero Section ----- */
 
