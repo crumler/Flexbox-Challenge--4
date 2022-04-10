@@ -38,9 +38,6 @@ h2 {
   font-size: var(--playfair-fs-36);
 }
 
-h1,
-h2 { font-weight: 900; }
-
 p {
   line-height: 1.8rem;
   font-size: var(--roboto-regular-fs);
