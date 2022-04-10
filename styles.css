@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  /* Colors */
+  --light-brown-clr: #F3EED9;
+  --brown-clr: #824936;
+  --dark-clr: #222C2A;
+
+  /* Typography */
+  --roboto-light-fs: 1.125rem;
+  --roboto-regular-fs: 1.313rem;
+  --roboto-light-fw: 300;
+  --roboto-regular-fw: 400;
+  --playfair-fs-60: 3.75rem;
+  --playfair-fs-36: 2.25rem;
+}
+
+/* Resets */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+body { font-family: 'Roboto', sans-serif; }
+
+h1 {
+  color: var(--brown-clr);
+  font-family: 'Playfair Display', serif;
+  font-size: var(--playfair-fs-60);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--playfair-fs-36);
+}
+
+p {
+  line-height: 1.8rem;
+  font-size: var(--roboto-regular-fs);
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1128px;
+  width: 80%;
+  margin: 0 auto;
+  /* border: 2px solid green; */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+}
+
+.col { width: 100%; }
+
+section { padding: 4em 0; }
+
+img { width: 100%; }
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 660px;
+  max-height: 100vh;
+  background-color: var(--light-brown-clr);
+}
+
+.hero__text {
+  text-align: center;
+  width: 62.5%;
+  margin: 0 auto;
+}
+
+.hero p {
+  font-weight: var(--roboto-light-fw);
+  font-size: var(--roboto-light-fs);
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+/* Quality Designs Section */
+
+.quality { padding: 6em 0; }
+
+.quality h2 {
+  color: var(--brown-clr);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.quality p { color: var(--dark-clr); }
+
+/* Made Custom for You Section */
+
+.custom {
+  background-color: var(--dark-clr);
+  color: var(--light-brown-clr);
+  padding: 4em 0;
+}
+
+.custom h2 { margin-bottom: 0.8em; }
+
+/* Created With Care Section */
+
+.created {
+  background-color: var(--brown-clr);
+  color: var(--light-brown-clr);
+}
+
+.created h2 { margin-bottom: 0.8em; }
