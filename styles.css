@@ -118,3 +118,19 @@ img { width: 100%; }
 }
 
 .created h2 { margin-bottom: 0.8em; }
+
+/* Media Queries */
+
+@media (max-width: 675px) {
+  .row { display: block; }
+
+  .col + .col {
+    padding-top: 2em;
+  }
+
+  .quality,
+  .custom { padding: 2em 0; }
+
+  .custom h2,
+  .created h2 { text-align: center; }
+}
